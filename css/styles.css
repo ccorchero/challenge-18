@@ -72,30 +72,37 @@ text-align: center;
 }
 
 * targeting the class of My Skills
-<!--My UX Skills section coded using CSS flex-->
+<!--My UX Skills coded using CSS flex-->
+
 .mySkills {
+    
+    outline: 1px solid red;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
 }
 .image-Container{
-    
     outline: 1px solid red;
     position: relative;
-    color:#F3F3f3
-}
+    color: #f3f3f3;
 
+    }
 .overlay-image {
-    position: 
+    flex: 50%;
+    padding 0 4px
+    margin-top: 8px;
+    vertical-align: middle;
     
 }
 .flexContainer {
     color:#F3F3f3
-    p 
+     
 
 }
 .myWork {
-    outline:1px solid red;
     
+    width:200px;
+    height: 200px;
+    outline:1px solid red;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
 }
 /* Add the base HTML footer element */
