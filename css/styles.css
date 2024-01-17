@@ -1,5 +1,6 @@
 body{
     background-color:#056249;
+    
 }
 header {
     background-color: #000001;
@@ -8,12 +9,22 @@ grid-template-columns: 1fr 1fr;
 width: 100%;
 align-items: center;
 }
-
+main {
+display: grid;
+align-items:center;
+max-width:1440px;
+justify-content: center;
+margin: 0 auto;
+}
 h1 {
  color:#F3F3f3;
 }
 h2{
-   color:#F3F3f3 
+   color:#F3F3f3; 
+}
+h4{
+    color: #88f057;
+    font-size: 32px;
 }
 /*Targeting div with the class of logo*/
 div.logo{
@@ -39,7 +50,6 @@ nav {
     padding: 0px 50px;
 }
 
-
 /* Center images inside their containers */
 .logo {
 text-align: center;
@@ -51,7 +61,7 @@ text-align: center;
     height: px;
     padding: 25px;
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     outline: 1px solid red;
 }
 .content {
@@ -59,52 +69,73 @@ text-align: center;
     
 
 .aboutMe {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
     outline: 1px solid red;
-    p{color:#F3F3f3}
-
-    
+        
 }
 .sidebyside {
-    display: inline-block;
-    width: 400px;
     outline: 1px solid red;
+    color:#F3F3f3;
 
+} 
+
+.aboutMeimg {
+    width: 600px;    
 }
 
-* targeting the class of My Skills
-<!--My UX Skills coded using CSS flex-->
-
+/* My UX Skills coded using CSS flex */
 .mySkills {
-    
     outline: 1px solid red;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+    color:#F3F3f3;
+    grid-template-columns: 9fr 3fr;
 }
 .image-Container{
+    background-image: url("../img/patterndesign.png");
     outline: 1px solid red;
-    position: relative;
     color: #f3f3f3;
-
-    }
-.overlay-image {
-    flex: 50%;
-    padding 0 4px
-    margin-top: 8px;
-    vertical-align: middle;
-    
+width: 100%;
+background-repeat: no-repeat;
 }
+.image-Container ul {
+    display: grid;
+    justify-content: center;
+    margin: 150px auto;
+}
+ 
 .flexContainer {
-    color:#F3F3f3
+    width: 100%;
+    color:#F3F3f3;}
+   
+ .eyeglass {
+ width:600px;
+}
      
+/* My Work section */
+.myWork {
+display: grid;
+grid-template-columns: 4fr 4fr 4fr;
 
 }
-.myWork {
+.workGrid {
     
-    width:200px;
-    height: 200px;
-    outline:1px solid red;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+    grid-template-columns: 4fr 4fr 4fr;
+    outline: 1px solid red;
+   
+
 }
+.wordGrid img {
+    background-color: #b29503 !important;
+    margin: 100px !important;
+    width: 100%;
+
+}
+h3 {
+    color: #88f057;
+}
+ p{color:#F3F3f3;}  
+
 /* Add the base HTML footer element */
 .footer{
     background-color: #373738;}
@@ -117,6 +148,14 @@ text-align: center;
     footer ul li {
         list-style-type: none;
         padding: 0px 50px;
+        background:#000001;
     }
     
-    
+    /* @media only screen and (min-width: 320px) and (max-width:780px) 
+    {} */
+    @media screen and (max-width: 576px) {
+        .mySkills {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
